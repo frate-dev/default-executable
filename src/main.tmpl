@@ -1,16 +1,16 @@
-{%if lang == "c"%}
+{% if lang == "c" %}
 #include <stdio.h>
-{%endif%}
-{%if lang == "cpp"%}
+{% endif %}
+{% if lang == "cpp" %}
 #include <iostream>
-{%endif%}
+{% endif %}
 
 int  main(){
-  {%if lang == "cpp"%}
+  {% if lang == "cpp" %}
   std::cout << "Hello World!!!!" << std::endl;
-  {%endif%}
-  {%if lang == "c"}
+  {% endif %}
+  {% if lang == "c"}
   printf("hello world");
-  {%endif%}
+  {% endif %}
   return 0;
 }
