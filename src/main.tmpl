@@ -1,7 +1,7 @@
 {% if lang == "c" %}#include <stdio.h>{% endif %}
 {% if lang == "cpp" %}#include <iostream>{% endif %}
 
-int  main(){
+int  main(int argc, char** argv){
   {% if lang == "cpp" %}std::cout << "Hello World!!!!" << std::endl;{% endif %}
   {% if lang == "c" %}printf("Hello World!!!!");{% endif %}
   return 0;
