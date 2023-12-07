@@ -23,19 +23,8 @@ CPMAddPackage(
   VERSION 1.2
 )
 include(FetchContent)
-##for dep in dependencies
-#FetchContent_Declare(
-#  {{  dep.name }}
-#  GIT_REPOSITORY {{ dep.git }}
-#  GIT_TAG {{ dep.version }}
-#)
-CPMAddPackage(
-  NAME {{ dep.name }}
-  GIT_REPOSITORY {{ dep.git }}
-  GIT_TAG {{ dep.version }}
-)
-#FetchContent_MakeAvailable({{ dep.name }})
-##endfor
+
+{{deps()}}
 
 file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR}
   "src/**.cpp"
