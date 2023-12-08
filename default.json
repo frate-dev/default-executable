@@ -33,9 +33,17 @@
   ],
   "project_description": "",
   "project_name": "",
-  "project_path": "/home/lucas/wrk/frate/build",
   "project_type": "executable",
   "project_version": "0.0.1",
   "src_dir": "src",
-  "toolchains": []
+  "toolchains": [],
+  "prompts": {
+    "example" : {
+      "type" : "bool",
+      "default" : "true",
+      "text" : "Do you like frate?",
+      "lua_callback" : "do_you_like_frate",
+      "required" : "true"
+    }
+  }
 }

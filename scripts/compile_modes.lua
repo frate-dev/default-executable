@@ -1,7 +1,10 @@
 local modes_str = ""
 
 for _, mode in pairs(project.modes) do
-  modes_str = modes_str .. "if (CMAKE_BUILD_TYPE STREQUAL \"" .. mode.name .. "\")\n"
+  modes_str = modes_str ..
+  "if (CMAKE_BUILD_TYPE STREQUAL \"" 
+  .. mode.name 
+  .. "\")\n"
   for _, dep in pairs(mode.dependencies) do
     modes_str = modes_str .. "  CPMAddPackage(\n" 
     .. "    NAME " .. dep.name .. "\n"
