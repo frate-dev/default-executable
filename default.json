@@ -1,4 +1,5 @@
 {
+  "config_version": "0.1",
   "authors": [],
   "build_dir": "build",
   "cmake_version": "3.10",
@@ -37,6 +38,19 @@
   "project_version": "0.0.1",
   "src_dir": "src",
   "toolchains": [],
+  "varibles": {
+    "examplebool" : true,
+    "exampleint" : 1,
+    "examplestr" : "hello",
+    "examplefloat" : 1.0,
+    "examplearray" : [
+      "hello",
+      "world"
+    ],
+    "exampleobject" : {
+      "hello" : "world"
+    }
+  },
   "prompts": {
     "example" : {
       "type" : "bool",

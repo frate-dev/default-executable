@@ -1,6 +1,3 @@
-print("targets.lua")
-
-
 local target_str = ""
 
 for _, target in pairs(project.dependencies) do

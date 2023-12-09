@@ -1,6 +1,3 @@
-print("flags.lua")
-
-
 local flags_str = "SET(CMAKE_CXX_FLAGS  \"${CMAKE_CXX_FLAGS} "
 
 
