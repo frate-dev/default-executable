@@ -1,3 +1,6 @@
+print("sccache.lua")
+
+
 local cache_str = ""
 
 

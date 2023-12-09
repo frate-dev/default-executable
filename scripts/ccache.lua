@@ -1,3 +1,6 @@
+print("ccache.lua")
+
+
 local cache_str = [[
 CPMAddPackage(
   NAME Ccache.cmake

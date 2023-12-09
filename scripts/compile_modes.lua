@@ -1,3 +1,6 @@
+print("compile_modes.lua")
+
+
 local modes_str = ""
 
 for _, mode in pairs(project.modes) do

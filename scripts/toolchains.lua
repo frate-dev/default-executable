@@ -1,3 +1,6 @@
+print("toolchains.lua")
+
+
 local toolchains_str = ""
 
 
