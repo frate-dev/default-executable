@@ -9,6 +9,7 @@
   "include_dir": "include",
   "lang": "cpp",
   "lang_version": "20",
+  "default_mode": "Release",
   "modes": [
     {
       "dependencies": [],
@@ -32,6 +33,7 @@
       "name": "Test"
     }
   ],
+  "keywords": [],
   "project_description": "",
   "project_name": "",
   "project_type": "executable",
