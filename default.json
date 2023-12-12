@@ -40,7 +40,7 @@
   "project_version": "0.0.1",
   "src_dir": "src",
   "toolchains": [],
-  "varibles": {
+  "variables": {
     "examplebool" : true,
     "exampleint" : 1,
     "examplestr" : "hello",
