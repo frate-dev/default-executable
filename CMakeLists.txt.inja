@@ -46,4 +46,5 @@ set_target_properties({{project_name}} PROPERTIES RUNTIME_OUTPUT_DIRECTORY {{bui
 
 {{  targets("")  }}
 install(TARGETS {{project_name}} DESTINATION bin)
+{{ cpack("") }}
 

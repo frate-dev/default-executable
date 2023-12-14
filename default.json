@@ -51,6 +51,16 @@
     ],
     "exampleobject" : {
       "hello" : "world"
+    },
+    "cpack" : {
+      "name" : "MyProject",
+      "vendor" : "MyCompany",
+      "description" : "MyProject does something",
+      "version" : "1.0.0",
+      "contact" : ""
+    },
+    "cpack_ubuntu" : {
+      "depends" : {}
     }
   },
   "prompts": {
