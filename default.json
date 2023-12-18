@@ -66,10 +66,10 @@
   "prompts": {
     "example" : {
       "type" : "bool",
-      "default" : "true",
+      "default" : "y",
       "text" : "Do you like frate?",
       "lua_callback" : "do_you_like_frate",
-      "required" : "true"
+      "required" : true
     }
   }
 }
