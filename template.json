@@ -11,7 +11,7 @@
   "flags": [],
   "system_libs": [],
   "supported_compilers": ["g++", "clang++", "clang", "gcc"],
-  "supported_lanaguages": ["cpp", "c"],
+  "supported_languages": ["cpp", "c"],
   "supported_language_versions": ["20","17","14","11"],
   "supported_toolchains": [
     "x86_64-linux-gnu",
