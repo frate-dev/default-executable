@@ -9,6 +9,7 @@
   "min_cmake_version": "3.0",
   "dependencies": [],
   "flags": [],
+  "system_libs": [],
   "supported_compilers": ["g++", "clang++", "clang", "gcc"],
   "supported_lanaguages": ["cpp", "c"],
   "supported_language_versions": ["20","17","14","11"],
