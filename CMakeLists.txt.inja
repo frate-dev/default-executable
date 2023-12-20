@@ -2,8 +2,8 @@
 
 cmake_minimum_required( VERSION {{ cmake_version }} )
 project(
-  {{ project_name }}
-  VERSION {{ project_version }}
+  {{ name }}
+  VERSION {{ version }}
   {%if lang == "cpp"%}LANGUAGES CXX
   {%else if lang == "c"%}LANGUAGES C
   {%endif%}
@@ -36,15 +36,15 @@ if(NOT DEFINED RELEASE)
   set(RELEASE 0)
 endif()
 
-add_executable({{project_name}} ${SOURCES})
+add_executable({{name}} ${SOURCES})
 
 {{ compile_modes("") }}
 
 set(BUILD_DIR {{ build_dir }})
-set_target_properties({{project_name}} PROPERTIES RUNTIME_OUTPUT_DIRECTORY {{build_dir}})
+set_target_properties({{name}} PROPERTIES RUNTIME_OUTPUT_DIRECTORY {{build_dir}})
 
 
 {{  targets("")  }}
-install(TARGETS {{project_name}} DESTINATION bin)
+install(TARGETS {{name}} DESTINATION bin)
 {{ cpack("") }}
 
