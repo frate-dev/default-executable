@@ -42,18 +42,7 @@
       "name": "Test"
     }
   ],
-  "variables": {
-    "examplebool" : true,
-    "exampleint" : 1,
-    "examplestr" : "hello",
-    "examplefloat" : 1.0,
-    "examplearray" : [
-      "hello",
-      "world"
-    ],
-    "exampleobject" : {
-      "hello" : "world"
-    },
+  "global": {
     "cpack" : {
       "name" : "MyProject",
       "vendor" : "MyCompany",
