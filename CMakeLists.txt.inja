@@ -1,4 +1,4 @@
-{{ toolchains("") }}
+{{ frate.toolchains("") }}
 
 cmake_minimum_required( VERSION {{ cmake_version }} )
 project(
@@ -12,11 +12,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD {{ lang_version }})
 include(cmake/CPM.cmake)
 
-{{ sccache("") }}
-{{ ccache("") }}
+{{ frate.sccache("") }}
+{{ frate.ccache("") }}
 
 
-{{ packages("") }}
+{{ frate.packages("") }}
 
 file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR}
   "src/**.cpp"
@@ -27,7 +27,7 @@ file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR}
 
 message("Sources: ${SOURCES}")
 
-{{ flags("") }}
+{{ frate.flags("") }}
 
 include_directories($CMAKE_SOURCE_DIR/{{ include_dir }})
 set(HEADER_DIR $CMAKE_SOURCE_DIR/{{ include_dir }})
@@ -38,13 +38,13 @@ endif()
 
 add_executable({{name}} ${SOURCES})
 
-{{ compile_modes("") }}
+{{ frate.compile_modes("") }}
 
 set(BUILD_DIR {{ build_dir }})
 set_target_properties({{name}} PROPERTIES RUNTIME_OUTPUT_DIRECTORY {{build_dir}})
 
 
-{{  targets("")  }}
+{{ frate.targets("")  }}
 install(TARGETS {{name}} DESTINATION bin)
-{{ cpack("") }}
+{{ frate.cpack("") }}
 
