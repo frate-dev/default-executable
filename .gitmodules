@@ -1,0 +1,4 @@
+[submodule "scripts/frate"]
+	path = scripts/frate
+	url = git@github.com:frate-templates/frate-callbacks
+	branch = new_function_prefix
