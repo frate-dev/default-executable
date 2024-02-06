@@ -29,8 +29,8 @@ message("Sources: ${SOURCES}")
 
 {{ frate.flags("") }}
 
-include_directories(${ CMAKE_SOURCE_DIR }/{{ include_dir }})
-set(HEADER_DIR ${ CMAKE_SOURCE_DIR }/{{ include_dir }})
+include_directories(${CMAKE_SOURCE_DIR}/{{ include_dir }})
+set(HEADER_DIR ${CMAKE_SOURCE_DIR}/{{ include_dir }})
 
 if(NOT DEFINED RELEASE)
   set(RELEASE 0)
