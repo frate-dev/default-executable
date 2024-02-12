@@ -2,7 +2,7 @@ set_build_command(plocal,frate.format([[
 cd {%path%};
 cmake -DCMAKE_BUILD_TYPE={%build_mode%};
 make -j {%jobs%}
-echo ""
+echo "\n"
 ./{%build_dir%}/{%name%}
 ]], {
     current_mode = project.current_mode,
